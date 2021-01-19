@@ -22,6 +22,7 @@
         <java.version>11</java.version>
         <kotlin.version>1.3.72</kotlin.version>
         <aws-java-sdk.version>1.11.939</aws-java-sdk.version>
+        <spring-data-dynamodb.version>5.2.5</spring-data-dynamodb.version>
     </properties>
 
     <modules>

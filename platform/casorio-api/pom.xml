@@ -20,9 +20,9 @@
             <version>${kotlin.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk-dynamodb</artifactId>
-            <version>${aws-java-sdk.version}</version>
+            <groupId>io.github.boostchicken</groupId>
+            <artifactId>spring-data-dynamodb</artifactId>
+            <version>${spring-data-dynamodb.version}</version>
         </dependency>
     </dependencies>
 
