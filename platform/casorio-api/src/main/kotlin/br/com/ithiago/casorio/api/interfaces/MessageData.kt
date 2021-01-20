@@ -6,4 +6,6 @@ interface MessageData {
 
     fun get(id: String): MessageEntity
 
+    fun save(message: MessageEntity): MessageEntity
+
 }
