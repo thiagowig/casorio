@@ -8,15 +8,17 @@ import org.springframework.web.bind.annotation.*
 @RestController
 class MessageController(val messageData: MessageData) {
 
-    @Value("\${casorio.apis.prefix}")
-    private lateinit var parameter: String
-
     @GetMapping("/message/{id}")
     fun get(@PathVariable id: String): MessageEntity {
         return messageData.get(id)
     }
 
-    @PostMapping("message")
+    @GetMapping("/message")
+    fun getAll(): List<MessageEntity> {
+        return messageData.getAll()
+    }
+
+    @PostMapping("/message")
     fun post(@RequestBody message: MessageEntity): MessageEntity {
         return messageData.save(message)
     }

@@ -21,7 +21,12 @@ class MessageDataImpl(val messageRepository: MessageRepository): MessageData {
             throw ResponseStatusException(HttpStatus.NOT_FOUND, "No message found with id $id")
     }
 
+    override fun getAll(): List<MessageEntity> {
+        return messageRepository.findAll() as List<MessageEntity>
+    }
+
     override fun save(message: MessageEntity): MessageEntity {
+        print("")
         if (message.id.isEmpty()) {
             message.id = IdUtil.generateId()
         }

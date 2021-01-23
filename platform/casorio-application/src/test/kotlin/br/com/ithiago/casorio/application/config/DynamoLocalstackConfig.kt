@@ -8,6 +8,7 @@ import com.amazonaws.services.dynamodbv2.document.DynamoDB
 import com.amazonaws.services.dynamodbv2.model.*
 import org.springframework.boot.test.context.TestConfiguration
 import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.Primary
 
 @TestConfiguration
 class DynamoLocalstackConfig {
@@ -15,7 +16,7 @@ class DynamoLocalstackConfig {
     companion object {
         lateinit var amazonDynamoDB: AmazonDynamoDB
         lateinit var dynamoDB: DynamoDB
-        private const val TABLE_NAME = "massage"
+        private const val TABLE_NAME = "message"
     }
 
     init {
@@ -41,24 +42,24 @@ class DynamoLocalstackConfig {
     private fun initDynamoTables() {
         val attributes = arrayListOf(
             AttributeDefinition("id", ScalarAttributeType.S),
-            AttributeDefinition("name", ScalarAttributeType.S),
         )
 
         val keySchemas = arrayListOf(
             KeySchemaElement("id", KeyType.HASH),
-            KeySchemaElement("name", KeyType.RANGE)
         )
 
         val request = CreateTableRequest().withTableName(TABLE_NAME)
             .withAttributeDefinitions(attributes)
             .withKeySchema(keySchemas)
             .withProvisionedThroughput(ProvisionedThroughput(10L, 10L))
+
         val table = dynamoDB.createTable(request)
         table.waitForActive()
     }
 
     @Bean
-    fun amazonDynamoDB(): AmazonDynamoDB {
+    @Primary
+    fun amazonDynamoDBLocalstack(): AmazonDynamoDB {
         return amazonDynamoDB
     }
 }
