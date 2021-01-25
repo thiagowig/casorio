@@ -6,3 +6,12 @@ spring:
 casorio:
   apis:
     prefix: /rest
+  queues:
+    message:
+      url: casorio-sqs-queue-message
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
