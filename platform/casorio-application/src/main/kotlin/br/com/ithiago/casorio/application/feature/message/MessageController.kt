@@ -3,7 +3,9 @@ package br.com.ithiago.casorio.application.feature.message
 import br.com.ithiago.casorio.api.entities.MessageEntity
 import br.com.ithiago.casorio.api.interfaces.MessageData
 import br.com.ithiago.casorio.api.utils.log.LogVars
+import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation.*
+import javax.validation.Valid
 
 @RestController
 class MessageController(val messageData: MessageData) {
@@ -22,7 +24,7 @@ class MessageController(val messageData: MessageData) {
 
     @PostMapping("/message")
     @LogVars
-    fun post(@RequestBody message: MessageEntity): MessageEntity {
+    fun post(@RequestBody @Valid message: MessageEntity): MessageEntity {
         return messageData.save(message)
     }
 }

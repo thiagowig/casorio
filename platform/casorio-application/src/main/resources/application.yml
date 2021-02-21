@@ -10,6 +10,12 @@ casorio:
     message:
       url: casorio-sqs-queue-message
 
+server:
+  error:
+    include-binding-errors: always
+    include-message: always
+
+
 management:
   endpoints:
     web:
