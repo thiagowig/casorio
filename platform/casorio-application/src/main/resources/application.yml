@@ -15,6 +15,10 @@ server:
     include-binding-errors: always
     include-message: always
 
+security:
+  jwt:
+    expiration: 3600
+    secret: 123456
 
 management:
   endpoints:
