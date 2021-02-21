@@ -32,13 +32,13 @@ class MessageDataImpl(val messageRepository: MessageRepository,
     }
 
     @LogVars
-    @Cacheable(value = ["listaDeTopicos"])
+    @Cacheable(value = ["MessageDataImpl.getAll"])
     override fun getAll(): List<MessageEntity> {
         return messageRepository.findAll() as List<MessageEntity>
     }
 
     @LogVars
-    @CacheEvict(value = ["listaDeTopicos"], allEntries = true)
+    @CacheEvict(value = ["MessageDataImpl.getAll"], allEntries = true)
     override fun save(messageEntity: MessageEntity): MessageEntity {
         if (messageEntity.id.isEmpty()) {
             messageEntity.id = IdUtil.generateId()
