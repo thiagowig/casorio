@@ -1,6 +1,8 @@
 package br.com.ithiago.casorio.application.system.config.security
 
 import br.com.ithiago.casorio.api.entities.security.UserEntity
+import io.jsonwebtoken.Claims
+import io.jsonwebtoken.Jws
 import io.jsonwebtoken.Jwts
 import io.jsonwebtoken.SignatureAlgorithm
 import org.springframework.beans.factory.annotation.Value
@@ -35,5 +37,24 @@ class TokenService {
 
     fun convertToDate(instant: Instant): Date {
         return Date(instant.toEpochMilli())
+    }
+
+    fun isValidToken(token: String?): Boolean {
+        return try {
+            getClaims(token)
+            true
+
+        } catch (ex: Exception) {
+            false
+        }
+    }
+
+    fun getUserEmail(token: String?): String {
+        val claims = getClaims(token).body
+        return claims.subject
+    }
+
+    fun getClaims(token: String?): Jws<Claims> {
+        return Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token)
     }
 }

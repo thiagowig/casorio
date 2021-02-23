@@ -1,5 +1,6 @@
 package br.com.ithiago.casorio.application.system.config.security
 
+import br.com.ithiago.casorio.data.dynamodb.repository.UserRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean
 import org.springframework.http.HttpMethod
@@ -10,12 +11,20 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
 import org.springframework.security.config.http.SessionCreationPolicy
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
+
 
 @EnableWebSecurity
 class SecurityConfiguration: WebSecurityConfigurerAdapter() {
 
     @Autowired
     private lateinit var authService: AuthenticationService
+
+    @Autowired
+    private lateinit var tokenService: TokenService
+
+    @Autowired
+    private lateinit var userRepository: UserRepository
 
     @Bean
     override fun authenticationManager(): AuthenticationManager {
@@ -35,5 +44,6 @@ class SecurityConfiguration: WebSecurityConfigurerAdapter() {
             .anyRequest().authenticated()
             .and().csrf().disable()
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+            .and().addFilterBefore(AuthenticationFilter(tokenService, userRepository), UsernamePasswordAuthenticationFilter::class.java);
     }
 }
