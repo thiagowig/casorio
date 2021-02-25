@@ -10,4 +10,6 @@ interface MessageData {
 
     fun save(message: MessageEntity): MessageEntity
 
+    fun delete(messageId: String)
+
 }

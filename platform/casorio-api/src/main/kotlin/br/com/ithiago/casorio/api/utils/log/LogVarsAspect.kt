@@ -38,16 +38,19 @@ class LogVarsAspect {
         }
     }
 
-    fun generateValue(value: Any): String {
+    fun generateValue(value: Any?): String {
         val text = StringBuilder()
 
-        if (value is List<*>) {
-            value.forEach {
-                text.appendLine("[LogVars] Result: ${it?.toString()}")
+        value?.let {
+            if (value is List<*>) {
+                value.forEach {
+                    text.appendLine("[LogVars] Result: ${it?.toString()}")
+                }
+            } else {
+                text.appendLine("[LogVars] Result: ${value.toString()}")
             }
-        } else {
-            text.appendLine("[LogVars] Result: ${value.toString()}")
         }
+
 
         return text.toString()
     }

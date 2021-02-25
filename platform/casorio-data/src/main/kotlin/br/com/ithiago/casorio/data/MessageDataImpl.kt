@@ -50,4 +50,10 @@ class MessageDataImpl(val messageRepository: MessageRepository,
 //
 //        return messageEntity
     }
+
+    @LogVars
+    @CacheEvict(value = ["MessageDataImpl.getAll"], allEntries = true)
+    override fun delete(messageId: String) {
+        messageRepository.deleteById(messageId)
+    }
 }

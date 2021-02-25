@@ -1,13 +1,13 @@
 package br.com.ithiago.casorio.api.entities.security
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument
 import org.springframework.security.core.GrantedAuthority
 
+@DynamoDBDocument
 data class Profiles(
 
-    @DynamoDBHashKey
-    var id: String,
-    var name: String
+    var id: String = "",
+    var name: String = ""
 
 ): GrantedAuthority {
 

@@ -9,6 +9,8 @@ casorio:
   queues:
     message:
       url: casorio-sqs-queue-message
+  authentication:
+    path: "/auth"
 
 server:
   error:

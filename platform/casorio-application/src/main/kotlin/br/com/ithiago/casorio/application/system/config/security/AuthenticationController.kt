@@ -20,7 +20,7 @@ class AuthenticationController {
     @Autowired
     private lateinit var tokenService: TokenService
 
-    @PostMapping("/auth")
+    @PostMapping("\${casorio.authentication.path}")
     fun authenticate(@RequestBody userEntity: UserEntity): ResponseEntity<Any> {
         val loginData = UsernamePasswordAuthenticationToken(userEntity.email, userEntity.pass)
 

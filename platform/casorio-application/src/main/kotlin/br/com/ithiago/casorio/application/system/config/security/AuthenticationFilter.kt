@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletResponse
 
 class AuthenticationFilter(
     private var tokenService: TokenService,
-    private var userRepository: UserRepository
+    private var userRepository: UserRepository,
+    private var authenticationPath: String
 ) : OncePerRequestFilter() {
 
     override fun doFilterInternal(
@@ -45,6 +46,11 @@ class AuthenticationFilter(
 
         val authentication = UsernamePasswordAuthenticationToken(user, null, user.get().authorities)
         SecurityContextHolder.getContext().authentication = authentication
+    }
+
+    override fun shouldNotFilter(request: HttpServletRequest): Boolean {
+        val currentPath = request.requestURI
+        return authenticationPath == currentPath
     }
 
 }
