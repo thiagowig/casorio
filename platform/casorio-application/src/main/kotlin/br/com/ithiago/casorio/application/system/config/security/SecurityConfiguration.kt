@@ -8,6 +8,7 @@ import org.springframework.core.annotation.Order
 import org.springframework.http.HttpMethod
 import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
@@ -17,7 +18,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 
 @EnableWebSecurity
-@Order(0)
+//@Order(0)
+@EnableGlobalMethodSecurity(securedEnabled = true)
 class SecurityConfiguration: WebSecurityConfigurerAdapter() {
 
     @Autowired
@@ -50,7 +52,7 @@ class SecurityConfiguration: WebSecurityConfigurerAdapter() {
                 .antMatchers(HttpMethod.DELETE, "/message/*").hasRole("ADMIN")
             .anyRequest().authenticated()
             .and().csrf().disable()
-            .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-            .and().addFilterAfter(AuthenticationFilter(tokenService, userRepository, authenticationPath), UsernamePasswordAuthenticationFilter::class.java)
+            //.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+            .addFilterAfter(AuthenticationFilter(tokenService, userRepository, authenticationPath), UsernamePasswordAuthenticationFilter::class.java)
     }
 }

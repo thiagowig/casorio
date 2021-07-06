@@ -10,6 +10,7 @@ import org.springframework.security.core.AuthenticationException
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
+import javax.servlet.http.HttpServletRequest
 
 @RestController
 class AuthenticationController {
@@ -19,6 +20,9 @@ class AuthenticationController {
 
     @Autowired
     private lateinit var tokenService: TokenService
+
+    @Autowired
+    private lateinit var request: HttpServletRequest
 
     @PostMapping("\${casorio.authentication.path}")
     fun authenticate(@RequestBody userEntity: UserEntity): ResponseEntity<Any> {
