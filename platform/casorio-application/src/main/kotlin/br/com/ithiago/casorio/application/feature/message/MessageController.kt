@@ -1,10 +1,7 @@
 package br.com.ithiago.casorio.application.feature.message
 
-import br.com.ithiago.casorio.api.entities.MessageEntity
 import br.com.ithiago.casorio.api.interfaces.MessageData
 import br.com.ithiago.casorio.api.utils.log.LogVars
-import org.springframework.http.ResponseEntity
-import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation.*
 import javax.validation.Valid
 
@@ -13,20 +10,27 @@ class MessageController(val messageData: MessageData) {
 
     @GetMapping("/message/{id}")
     @LogVars
-    fun get(@PathVariable id: String): MessageEntity {
-        return messageData.get(id)
+    fun get(@PathVariable id: String): MessageDTO {
+        val entity = messageData.get(id)
+
+        return MessageConverter.convertToDTO(entity)
     }
 
     @GetMapping("/message")
     @LogVars
-    fun getAll(): List<MessageEntity> {
-        return messageData.getAll()
+    fun getAll(): List<MessageDTO> {
+        val entities = messageData.getAll()
+
+        return MessageConverter.convertToDTOBulk(entities)
     }
 
     @PostMapping("/message")
     @LogVars
-    fun post(@RequestBody @Valid message: MessageEntity): MessageEntity {
-        return messageData.save(message)
+    fun post(@RequestBody @Valid dto: MessageDTO): MessageDTO {
+        var entity = MessageConverter.convertToEntity(dto)
+        entity = messageData.save(entity)
+
+        return MessageConverter.convertToDTO(entity)
     }
 
     @DeleteMapping("/message/{id}")

@@ -12,7 +12,7 @@ class Saveday extends Component {
                         <div className="col-12">
                             <div className="countdownwrap">
                                 <CountDown
-                                    deadline="August 22, 2022"
+                                    deadline="November 14, 2021"
                                 />
                             </div>
                         </div>

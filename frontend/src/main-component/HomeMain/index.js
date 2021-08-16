@@ -14,8 +14,8 @@ import Gift from '../../components/gift';
 import Navbar from '../../components/Navbar'
 import Saveday from '../../components/countdown'
 import Footer from '../../components/footer'
-import couple1 from '../../images/couple/img-4.jpg'
-import couple2 from '../../images/couple/img-3.jpg'
+import couple1 from '../../images/couple/simone.jpg'
+import couple2 from '../../images/couple/thiago.jpg'
 
 
 const HomeMain = () => {

@@ -3,13 +3,13 @@ welcome-area
 =================================*/
 
 .welcome-area {
-    background: url(../../images/slider/1.jpg);
+    background: url(../../images/slider/welcome.jpg);
     position: relative;
     height: 500px;
     background-attachment: fixed;
 }
 .welcome-area.s2{
-    background: url(../../images/slider/3.jpg);
+    background: url(../../images/slider/welcome.jpg);
     background-attachment: fixed;
 }
 

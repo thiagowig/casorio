@@ -11,6 +11,12 @@ data class MessageEntity (
     var id: String = "",
 
     @get:NotBlank
-    var name: String = ""
+    var name: String = "",
+
+    @get:NotBlank
+    var email: String = "",
+
+    @get:NotBlank
+    var content: String = ""
 
 )

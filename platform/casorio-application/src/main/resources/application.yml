@@ -9,18 +9,6 @@ casorio:
   queues:
     message:
       url: casorio-sqs-queue-message
-  authentication:
-    path: "/auth"
-
-server:
-  error:
-    include-binding-errors: always
-    include-message: always
-
-security:
-  jwt:
-    expiration: 3600
-    secret: 123456
 
 management:
   endpoints:

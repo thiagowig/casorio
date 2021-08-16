@@ -4,18 +4,18 @@ import 'react-fancybox/lib/fancybox.css'
 import Sectiontitle from '../section-title'
 import './style.css'
 
-import galimg1 from '../../images/gal/img-1.jpg'
-import galimg2 from '../../images/gal/img-2.jpg'
-import galimg3 from '../../images/gal/img-3.jpg'
-import galimg4 from '../../images/gal/img-4.jpg'
-import galimg5 from '../../images/gal/img-5.jpg'
-import galimg6 from '../../images/gal/img-6.jpg'
+import galimg1 from '../../images/gal/gallery01.jpg'
+import galimg2 from '../../images/gal/gallery02.jpg'
+import galimg3 from '../../images/gal/gallery03.jpg'
+import galimg4 from '../../images/gal/gallery04.jpg'
+import galimg5 from '../../images/gal/gallery05.jpg'
+import galimg6 from '../../images/gal/gallery06.jpg'
 
 class Gallery extends Component {
   render() {
     return (
       <div id="gallery" className="Gallery-section section-padding">
-          <Sectiontitle section={'Our Gellary'}/>
+          <Sectiontitle section={'Nossa galeria'}/>
           <div className="container">
               <div className="row">
                   <div className="col-lg-4 col-md-6 col-sm-6 col-12">
