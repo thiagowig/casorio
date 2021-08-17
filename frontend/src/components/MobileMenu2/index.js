@@ -34,13 +34,11 @@ export default class MobileMenu2 extends Component {
                         <h2><Link to='/home'>Simone & Thiago</Link></h2>
                     </div>
                     <ul className="responsivemenu">
-                        <li><Link to='/home'>Home</Link></li>
                         <li><Link to='/home'>Casal</Link></li>
-                        <li><Link to='/home'>História</Link></li>
-                        <li><Link to='/home'>Pessoas</Link></li>
-                        <li><Link to='/home'>Evento</Link></li>
-                        <li><Link to='/home'>Galeria</Link></li>
+                        <li><Link to='/home'>Madrinhas e Padrinhos</Link></li>
+                        <li><Link to='/home'>Cerimônia</Link></li>
                         <li><Link to='/home'>Confirmação</Link></li>
+                        <li><Link to='/home'>Presentes</Link></li>
                     </ul>
                     
                 </div>

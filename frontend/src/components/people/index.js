@@ -16,7 +16,7 @@ const People = (props) => {
     return(
         <section id='people' className={props.guest}>
             <div className="groomsmen-bridesmaid-area section-padding">
-                <Sectiontitle section={'Groomsmen & Bridesmaid'}/>
+                <Sectiontitle section={'Madrinhas e Padrinhos'}/>
                 <div className="container">
                     <div className="groomsmen-bridesmaid-area-menu">
                         <div className="Groomsman-wrap">
