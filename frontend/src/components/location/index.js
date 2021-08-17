@@ -39,7 +39,7 @@ const Location = (props) => {
                                                     <h3>Ilustre Garden</h3>
                                                     <span>Domingo, 14 de novembro de 2021, às 16 horas</span>
                                                     <span>R. Carlos Henrique Lange, 550 - Garças, Belo Horizonte</span>
-                                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal </p>
+                                                    <p></p>
                                                     <Button className="btn" onClick={toggle}>Localização</Button>
                                                     <Modal isOpen={modal} toggle={toggle} className={className}>
                                                         <ModalHeader toggle={toggle}>Localização</ModalHeader>

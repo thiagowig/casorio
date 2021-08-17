@@ -21,7 +21,7 @@ const Welcome = (props) => {
                 <div className="col-lg-12">
                     <div className="welcome-content">
                         <h2>O grande dia</h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or less normal distribution of letters</p>
+                        <p>Estamos preparando tudo com muito carinho para compartilharmos  com nossos familiares e amigos esse momento tão especial em nossas vidas! Esperamos vocês com muita alegria para testemunharem nosso amor e para fazermos um brinde a essa nova etapa que se inicia. Saibam que se chegaram até aqui, é porque são importantes para nós e gostaríamos muito que estivessem conosco. Aguardamos vocês!</p>
                         <div className="btn"><AnchorLink href='#rsvp'>Confirmação</AnchorLink></div>
                         <Button className="btn" onClick={toggle}>Localização</Button>
                         <Modal isOpen={modal} toggle={toggle} className={className}>

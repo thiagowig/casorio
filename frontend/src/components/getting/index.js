@@ -9,7 +9,7 @@ import './style.css'
 const Getting = () => {
     return(
         <div className="gta-area section-padding">
-            <Sectiontitle section={'Getting There'}/>
+            <Sectiontitle section={'Presentes'}/>
             <div className="container">
                 <div className="row">
                     <div className="col col-lg-8 offset-lg-2 col-md-8 offset-md-2">
