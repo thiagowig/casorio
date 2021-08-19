@@ -31,16 +31,15 @@ export default class MobileMenu extends Component {
         return (
             <div>
                 <div className={`mobileMenu ${isMenuShow ? 'show' : ''}`}>
-                    {/* <div className="clox" onClick={this.menuHandler}>Close Me</div> */}
                     <div className="logo2">
-                        <h2><Link to='/home'>Simone & Thiago</Link></h2>
+                        <h2><AnchorLink href='#home' onClick={this.menuHandler}>Simone & Thiago</AnchorLink></h2>
                     </div>
                     <ul className="responsivemenu">
-                        <li><AnchorLink href='#couple'>Casal</AnchorLink></li>
-                        <li><AnchorLink href='#people'>Madrinhas e Padrinhos</AnchorLink></li>
-                        <li><AnchorLink href='#event'>Cerimônia</AnchorLink></li>
-                        <li><AnchorLink  href='#rsvp'>Confirmação</AnchorLink></li>
-                        <li><AnchorLink  href='#rsvp'>Presentes</AnchorLink></li>
+                        <li><AnchorLink href='#couple' onClick={this.menuHandler}>Casal</AnchorLink></li>
+                        <li><AnchorLink href='#people' onClick={this.menuHandler}>Madrinhas e Padrinhos</AnchorLink></li>
+                        <li><AnchorLink href='#event' onClick={this.menuHandler}>Cerimônia</AnchorLink></li>
+                        <li><AnchorLink href='#rsvp' onClick={this.menuHandler}>Confirmação</AnchorLink></li>
+                        <li><AnchorLink href='#gift' onClick={this.menuHandler}>Presentes</AnchorLink></li>
                     </ul>
                     
                 </div>

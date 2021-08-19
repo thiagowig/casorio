@@ -28,7 +28,7 @@ const Header = () => {
                                     <li><AnchorLink href='#people'>Madrinhas e Padrinhos</AnchorLink></li>
                                     <li><AnchorLink href='#event'>Cerimônia</AnchorLink></li>
                                     <li><AnchorLink href='#rsvp'>Confirmação</AnchorLink></li>
-                                    <li><AnchorLink href='#event'>Presentes</AnchorLink></li>
+                                    <li><AnchorLink href='#gift'>Presentes</AnchorLink></li>
                                 </ul>
                             </div>
                         </div>

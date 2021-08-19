@@ -3,6 +3,7 @@
 }
 .gift-area{
     padding: 80px 0;
+    background: rgba(178,201,211,.1);
 }
 .gift-area .slick-slider{
     padding-left: 100px;

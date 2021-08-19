@@ -31,7 +31,6 @@ const Homepage = () => {
            <Location/>
            <Rsvp/>
            <Getting/>
-           <Gift/>
            <Footer />
        </div>
     )

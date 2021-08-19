@@ -8,16 +8,15 @@ import './style.css'
 
 const Getting = () => {
     return(
-        <div className="gta-area section-padding">
+        <div id="gift" className="gta-area section-padding">
             <Sectiontitle section={'Presentes'}/>
             <div className="container">
                 <div className="row">
                     <div className="col col-lg-8 offset-lg-2 col-md-8 offset-md-2">
                         <div className="row">
                             <div className="heading col-md-12 col-sm-6">
-                                <h4>Transportation</h4>
                                 <div className="gta-content">
-                                    <p>industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
+                                    <p>Queridos familiares e amigos, como muitos sabem, já temos nosso apartamento mobiliado. Por isso, vamos disponibilizar nossa chave PIX caso alguém prefira converter o valor do presente em dinheiro para nos ajudar na lua de mel. Para os que preferem comprar o presente, fizemos uma lista no site do extra.</p>
                                 </div>
                                 <div className="gta-img">
                                     <img src={gta1} alt=""/>

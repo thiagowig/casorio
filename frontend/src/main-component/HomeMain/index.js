@@ -30,7 +30,6 @@ const HomeMain = () => {
            <Location/>
            <Rsvp/>
            <Getting/>
-           <Gift/>
            <Footer footer={'s2'}/>
        </div>
     )

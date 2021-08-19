@@ -31,14 +31,14 @@ export default class MobileMenu2 extends Component {
                 <div className={`mobileMenu ${isMenuShow ? 'show' : ''}`}>
                     {/* <div className="clox" onClick={this.menuHandler}>Close Me</div> */}
                     <div className="logo2">
-                        <h2><Link to='/home'>Simone & Thiago</Link></h2>
+                        <h2><Link to='#home' onClick={this.menuHandler}>Simone & Thiago</Link></h2>
                     </div>
                     <ul className="responsivemenu">
-                        <li><Link to='/home'>Casal</Link></li>
-                        <li><Link to='/home'>Madrinhas e Padrinhos</Link></li>
-                        <li><Link to='/home'>Cerimônia</Link></li>
-                        <li><Link to='/home'>Confirmação</Link></li>
-                        <li><Link to='/home'>Presentes</Link></li>
+                        <li><Link to='/home' onClick={this.menuHandler}>Casal</Link></li>
+                        <li><Link to='/home' onClick={this.menuHandler}>Madrinhas e Padrinhos</Link></li>
+                        <li><Link to='/home' onClick={this.menuHandler}>Cerimônia</Link></li>
+                        <li><Link to='/home' onClick={this.menuHandler}>Confirmação</Link></li>
+                        <li><Link to='/home' onClick={this.menuHandler}>Presentes</Link></li>
                     </ul>
                     
                 </div>

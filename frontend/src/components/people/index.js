@@ -1,300 +1,88 @@
-import React from  'react';
-import {Link} from 'react-router-dom'
+import React, { Component } from "react";
+import Slider from "react-slick";
 import Sectiontitle from '../section-title'
-import bride1 from '../../images/groomsmen-bridesmaid/1.jpg'
-import bride2 from '../../images/groomsmen-bridesmaid/2.jpg'
-import bride3 from '../../images/groomsmen-bridesmaid/3.jpg'
-import bride4 from '../../images/groomsmen-bridesmaid/4.jpg'
-import bride5 from '../../images/groomsmen-bridesmaid/5.jpg'
-import bride6 from '../../images/groomsmen-bridesmaid/6.jpg'
-import bride7 from '../../images/groomsmen-bridesmaid/7.jpg'
-import bride8 from '../../images/groomsmen-bridesmaid/8.jpg'
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import gift1 from '../../images/gift/gallery01.jpg'
+import gift2 from '../../images/gift/gallery02.jpg'
+import gift3 from '../../images/gift/img-3.jpg'
+import gift4 from '../../images/gift/img-4.jpg'
 import './style.css'
 
-const People = (props) => {
-    return(
-        <section id='people' className={props.guest}>
-            <div className="groomsmen-bridesmaid-area section-padding">
-                <Sectiontitle section={'Madrinhas e Padrinhos'}/>
-                <div className="container">
-                    <div className="groomsmen-bridesmaid-area-menu">
-                        <div className="Groomsman-wrap">
-                            <div className="row">
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap">
-                                        <div className="groomsmen-bridesmaid-img">
-                                            <img src={bride1 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>Lily Jameson</h4>
-                                            <span>Sister</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap groomsmen-bridesmaid-wrap-2">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride2 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>Lily Taylor</h4>
-                                            <span>Best Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride3 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>Ema Aliana</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap groomsmen-bridesmaid-wrap-2">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride4 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>Joey Famira</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap groomsmen-bridesmaid-wrap-2">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride5 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>Criys stone</h4>
-                                            <span>Made Of Honor</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride6 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>Watson Lyn</h4>
-                                            <span>best-friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap groomsmen-bridesmaid-wrap-2">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride7 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>Chris Fletcher</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap mb-0">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride8 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>John Clyne</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap mb-0">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride8 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>John Clyne</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap mb-0">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride8 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>John Clyne</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap mb-0">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride8 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>John Clyne</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap mb-0">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride8 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>John Clyne</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap mb-0">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride8 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>John Clyne</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-6 col-sm-6 grid">
-                                    <div className="groomsmen-bridesmaid-wrap mb-0">
-                                        <div className="groomsmen-bridesmaid-img">
-                                        <img src={bride8 } alt="bride"/>
-                                            <div className="social-list">
-                                                <ul className="d-flex">
-                                                    <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-twitter"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-linkedin"></span></Link></li>
-                                                    <li><Link to='/'><span className="fa fa-pinterest"></span></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="groomsmen-bridesmaid-content">
-                                            <h4>John Clyne</h4>
-                                            <span>Friend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+class Gift extends Component {
+  render() {
+    var settings = {
+      dots: false,
+      arrows: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+    return (
+      <div id="people" className="gift-area section-padding">
+        <Sectiontitle section={'Madrinhas e Padrinhos'} />
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <Slider {...settings}>
+                <div className="item">
+                  <img src={gift1} alt="" width="150px" height="150px" />
                 </div>
+                <div className="item">
+                  <img src={gift2} alt="" width="150px" height="150px" />
+                </div>
+                <div className="item">
+                  <img src={gift3} alt="" />
+                </div>
+                <div className="item">
+                  <img src={gift4} alt="" />
+                </div>
+                <div className="item">
+                  <img src={gift1} alt="" width="150px" height="150px" />
+                </div>
+                <div className="item">
+                  <img src={gift2} alt="" width="150px" height="150px" />
+                </div>
+                <div className="item">
+                  <img src={gift3} alt="" />
+                </div>
+                <div className="item">
+                  <img src={gift4} alt="" />
+                </div>
+              </Slider>
             </div>
-        </section>
-        
-    )
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default People;
+export default Gift;

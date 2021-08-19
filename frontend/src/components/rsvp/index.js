@@ -34,19 +34,16 @@ class Rsvp extends Component {
             notes, error } = this.state;
 
         if (name === '') {
-            error.name = "Please enter your name";
+            error.name = "Informe o seu nome";
         }
         if (email === '') {
-            error.email = "Please enter your email";
+            error.email = "Informe o seu email";
         }
         if (rsvp === '') {
             error.rsvp = "Select your number of rsvp";
         }
         if (events === '') {
             error.events = "Select your event list";
-        }
-        if (notes === '') {
-            error.notes = "Please enter your note";
         }
 
 
