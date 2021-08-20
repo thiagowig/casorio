@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import Sectiontitle from '../section-title'
 import strory1 from '../../images/events/ilustre.jpg'
-import strory2 from '../../images/events/img-2.jpg'
-import strory3 from '../../images/events/img-3.jpg'
 
 import './style.css'
 

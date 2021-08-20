@@ -18,7 +18,7 @@ const Header = () => {
                     <div className="row">
                         <div className="col-lg-3">
                             <div className="logo">
-                                <h2><Link to='/home'>Simone & Thiago</Link></h2>
+                                <h2><Link to='#home'>Simone & Thiago</Link></h2>
                             </div>
                         </div>
                         <div className="col-lg-9">

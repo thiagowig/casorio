@@ -9,7 +9,6 @@ import Location from '../../components/location';
 import Gallery from '../../components/gallery';
 import Rsvp from '../../components/rsvp';
 import Getting from '../../components/getting';
-import Gift from '../../components/gift';
 import Navbar from '../../components/Navbar'
 import Saveday from '../../components/countdown'
 import Footer from '../../components/footer'
