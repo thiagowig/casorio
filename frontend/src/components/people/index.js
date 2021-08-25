@@ -3,10 +3,18 @@ import Slider from "react-slick";
 import Sectiontitle from '../section-title'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import gift1 from '../../images/gift/gallery01.jpg'
-import gift2 from '../../images/gift/gallery02.jpg'
-import gift3 from '../../images/gift/img-3.jpg'
-import gift4 from '../../images/gift/img-4.jpg'
+import gift1 from '../../images/groomsmen-bridesmaid/valdirElizete.jpeg'
+import gift2 from '../../images/groomsmen-bridesmaid/talentoEGeizy.jpeg'
+import gift3 from '../../images/groomsmen-bridesmaid/catolBibi.jpeg'
+import gift4 from '../../images/groomsmen-bridesmaid/pedroMaira.jpeg'
+import gift5 from '../../images/groomsmen-bridesmaid/mauroFatima.jpeg'
+import gift6 from '../../images/groomsmen-bridesmaid/vissalEAriana.jpeg'
+import gift7 from '../../images/groomsmen-bridesmaid/grasiSerginho.jpeg'
+import gift8 from '../../images/groomsmen-bridesmaid/lucaseRachel.jpeg'
+import gift9 from '../../images/groomsmen-bridesmaid/barbara.jpeg'
+import gift10 from '../../images/groomsmen-bridesmaid/duEAdiana.jpeg'
+import gift11 from '../../images/groomsmen-bridesmaid/larissaMatheus.jpeg'
+
 import './style.css'
 
 
@@ -15,8 +23,8 @@ class Gift extends Component {
     var settings = {
       dots: false,
       arrows: false,
-      speed: 500,
-      slidesToShow: 4,
+      speed: 1000,
+      slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -24,22 +32,22 @@ class Gift extends Component {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
           }
         },
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1
           }
         }
@@ -53,28 +61,37 @@ class Gift extends Component {
             <div className="col-lg-12">
               <Slider {...settings}>
                 <div className="item">
-                  <img src={gift1} alt="" width="150px" height="150px" />
+                  <img src={gift1} alt=""/>
                 </div>
                 <div className="item">
-                  <img src={gift2} alt="" width="150px" height="150px" />
-                </div>
-                <div className="item">
-                  <img src={gift3} alt="" />
-                </div>
-                <div className="item">
-                  <img src={gift4} alt="" />
-                </div>
-                <div className="item">
-                  <img src={gift1} alt="" width="150px" height="150px" />
-                </div>
-                <div className="item">
-                  <img src={gift2} alt="" width="150px" height="150px" />
+                  <img src={gift2} alt=""/>
                 </div>
                 <div className="item">
                   <img src={gift3} alt="" />
                 </div>
                 <div className="item">
                   <img src={gift4} alt="" />
+                </div>
+                <div className="item">
+                  <img src={gift5} alt=""/>
+                </div>
+                <div className="item">
+                  <img src={gift6} alt=""/>
+                </div>
+                <div className="item">
+                  <img src={gift7} alt="" />
+                </div>
+                <div className="item">
+                  <img src={gift8} alt="" />
+                </div>
+                <div className="item">
+                  <img src={gift9} alt="" />
+                </div>
+                <div className="item">
+                  <img src={gift10} alt="" />
+                </div>
+                <div className="item">
+                  <img src={gift11} alt="" />
                 </div>
               </Slider>
             </div>

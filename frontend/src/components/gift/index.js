@@ -3,12 +3,11 @@ import Slider from "react-slick";
 import Sectiontitle from '../section-title'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import gift1 from '../../images/gift/gallery01.jpg'
+import gift1 from '../../images/groomsmen-bridesmaid/talentoEGeizy.jpeg'
 import gift2 from '../../images/gift/gallery02.jpg'
 import gift3 from '../../images/gift/img-3.jpg'
 import gift4 from '../../images/gift/img-4.jpg'
 import './style.css'
-
 
 class Gift extends Component {
   render() {
@@ -16,7 +15,7 @@ class Gift extends Component {
       dots: false,
       arrows: false,
       speed: 500,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -53,10 +52,10 @@ class Gift extends Component {
             <div className="col-lg-12">
               <Slider {...settings}>
                 <div className="item">
-                  <img src={gift1} alt="" width="150px" height="150px" />
+                  <img src={gift1} alt="" />
                 </div>
                 <div className="item">
-                  <img src={gift2} alt="" width="150px" height="150px" />
+                  <img src={gift2} alt=""/>
                 </div>
                 <div className="item">
                   <img src={gift3} alt="" />
@@ -65,10 +64,10 @@ class Gift extends Component {
                   <img src={gift4} alt="" />
                 </div>
                 <div className="item">
-                  <img src={gift1} alt="" width="150px" height="150px" />
+                  <img src={gift1} alt="" />
                 </div>
                 <div className="item">
-                  <img src={gift2} alt="" width="150px" height="150px" />
+                  <img src={gift2} alt="" />
                 </div>
                 <div className="item">
                   <img src={gift3} alt="" />

@@ -44,7 +44,7 @@ welcome-area
 
 .btn a {
     display: inline-block;
-    background: #fff;
+    background: #fff !important;
     color: #8ba1aa;
     padding: 10px 38px;
     font-size: 18px;
