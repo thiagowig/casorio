@@ -22,7 +22,7 @@ const Welcome = (props) => {
                     <div className="welcome-content">
                         <h2>O grande dia</h2>
                         <p>Estamos preparando tudo com muito carinho para compartilharmos  com nossos familiares e amigos esse momento tão especial em nossas vidas! Esperamos vocês com muita alegria para testemunharem nosso amor e para fazermos um brinde a essa nova etapa que se inicia. Saibam que se chegaram até aqui, é porque são importantes para nós e gostaríamos muito que estivessem conosco. Aguardamos vocês!</p>
-                        <div className="btn"><AnchorLink href='#rsvp'>Confirmação</AnchorLink></div>
+                        
                         <Button className="btn" onClick={toggle}>Localização</Button>
                         <Modal isOpen={modal} toggle={toggle} className={className}>
                             <ModalHeader toggle={toggle}>Localização</ModalHeader>

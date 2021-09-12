@@ -27,7 +27,6 @@ const HomeMain = () => {
            <Welcome welcome={'s2'}/>
            <People guest={'guest-style'}/>
            <Location/>
-           <Rsvp/>
            <Getting/>
            <Footer footer={'s2'}/>
        </div>

@@ -37,7 +37,6 @@ export default class MobileMenu2 extends Component {
                         <li><Link to='/home' onClick={this.menuHandler}>Casal</Link></li>
                         <li><Link to='/home' onClick={this.menuHandler}>Madrinhas e Padrinhos</Link></li>
                         <li><Link to='/home' onClick={this.menuHandler}>Cerimônia</Link></li>
-                        <li><Link to='/home' onClick={this.menuHandler}>Confirmação</Link></li>
                         <li><Link to='/home' onClick={this.menuHandler}>Presentes</Link></li>
                     </ul>
                     

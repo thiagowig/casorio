@@ -18,7 +18,7 @@ const Couple = (props) => {
                                     <div className="couple-text">
                                         <div className="couple-content">
                                             <h3>Simone Borges</h3>
-                                            <p>Hi I am Nancy Elizabeth. I am going to introduce myself.I am a professional graphic designer professional graphic designer going to introduce myself.I am going to introduce myself.</p>
+                                            <p>É com muita alegria que criamos esse site para compartilharmos um pouco do nosso casamento com vocês! O coração já está acelerado e aguardando ansiosamente nosso grande dia! Com a benção de Deus, será tudo lindo como sonhamos! </p>
                                         </div>
                                     </div>
                                 </div>
@@ -31,7 +31,7 @@ const Couple = (props) => {
                                     <div className="couple-text">
                                         <div className="couple-content">
                                             <h3>Thiago Fonseca</h3>
-                                            <p>Hi I am Nancy Elizabeth. I am going to introduce myself.I am a professional graphic designer professional graphic designer going to introduce myself.I am going to introduce myself.</p>
+                                            <p>Olá pessoal! Sejam todos muito bem vindos. A muié me laçou e agora não tem volta mais. Conto com sua presença nesse dia que será mara!</p>
                                         </div>
                                     </div>
                                 </div>

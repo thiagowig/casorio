@@ -12,8 +12,11 @@ import gift6 from '../../images/groomsmen-bridesmaid/vissalEAriana.jpeg'
 import gift7 from '../../images/groomsmen-bridesmaid/grasiSerginho.jpeg'
 import gift8 from '../../images/groomsmen-bridesmaid/lucaseRachel.jpeg'
 import gift9 from '../../images/groomsmen-bridesmaid/barbara.jpeg'
-import gift10 from '../../images/groomsmen-bridesmaid/duEAdiana.jpeg'
-import gift11 from '../../images/groomsmen-bridesmaid/larissaMatheus.jpeg'
+import gift10 from '../../images/groomsmen-bridesmaid/saulo.jpg'
+import gift11 from '../../images/groomsmen-bridesmaid/duEAdiana.jpeg'
+import gift12 from '../../images/groomsmen-bridesmaid/larissaMatheus.jpeg'
+import gift13 from '../../images/groomsmen-bridesmaid/lucasEJulia.jpg'
+import gift14 from '../../images/groomsmen-bridesmaid/carolEThiago.jpg'
 
 import './style.css'
 
@@ -61,37 +64,46 @@ class Gift extends Component {
             <div className="col-lg-12">
               <Slider {...settings}>
                 <div className="item">
-                  <img src={gift1} alt=""/>
+                  <img src={gift1} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift2} alt=""/>
+                  <img src={gift2} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift3} alt="" />
+                  <img src={gift3} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift4} alt="" />
+                  <img src={gift4} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift5} alt=""/>
+                  <img src={gift5} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift6} alt=""/>
+                  <img src={gift6} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift7} alt="" />
+                  <img src={gift7} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift8} alt="" />
+                  <img src={gift8} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift9} alt="" />
+                  <img src={gift9} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift10} alt="" />
+                  <img src={gift10} alt="" style={{borderRadius: 10}}/>
                 </div>
                 <div className="item">
-                  <img src={gift11} alt="" />
+                  <img src={gift11} alt="" style={{borderRadius: 10}}/>
+                </div>
+                <div className="item">
+                  <img src={gift12} alt="" style={{borderRadius: 10}}/>
+                </div>
+                <div className="item">
+                  <img src={gift13} alt="" style={{borderRadius: 10}}/>
+                </div>
+                <div className="item">
+                  <img src={gift14} alt="" style={{borderRadius: 10}}/>
                 </div>
               </Slider>
             </div>

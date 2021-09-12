@@ -21,7 +21,6 @@ const Header2 = () => {
                                     <li><Link to='/home'>Casal</Link></li>
                                     <li><Link to='/home'>Madrinhas e Padrinhos</Link></li>
                                     <li><Link to='/home'>Cerimônia</Link></li>
-                                    <li><Link to='/home'>Confirmação</Link></li>
                                     <li><Link to='/home'>Presentes</Link></li>
                                 </ul>
                             </div>

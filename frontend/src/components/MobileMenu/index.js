@@ -38,7 +38,6 @@ export default class MobileMenu extends Component {
                         <li><AnchorLink href='#couple' onClick={this.menuHandler}>Casal</AnchorLink></li>
                         <li><AnchorLink href='#people' onClick={this.menuHandler}>Madrinhas e Padrinhos</AnchorLink></li>
                         <li><AnchorLink href='#event' onClick={this.menuHandler}>Cerimônia</AnchorLink></li>
-                        <li><AnchorLink href='#rsvp' onClick={this.menuHandler}>Confirmação</AnchorLink></li>
                         <li><AnchorLink href='#gift' onClick={this.menuHandler}>Presentes</AnchorLink></li>
                     </ul>
                     

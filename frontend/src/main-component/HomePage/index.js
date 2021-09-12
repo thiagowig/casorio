@@ -28,7 +28,6 @@ const Homepage = () => {
            <Welcome/>
            <People/>
            <Location/>
-           <Rsvp/>
            <Getting/>
            <Footer />
        </div>
