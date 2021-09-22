@@ -7,7 +7,7 @@ import Welcome from '../../components/welcome-area';
 import People from '../../components/people';
 import Location from '../../components/location';
 import Gallery from '../../components/gallery';
-import Rsvp from '../../components/rsvp';
+import Bridesmaids from '../../components/bridesmaids';
 import Getting from '../../components/getting';
 import Navbar from '../../components/Navbar'
 import Saveday from '../../components/countdown'
@@ -25,6 +25,7 @@ const HomeMain = () => {
            <Couple couple={'s2'} coupleimg1={couple1} coupleimg2={couple2}/>
            <Gallery/>
            <Welcome welcome={'s2'}/>
+           <Bridesmaids/>
            <People guest={'guest-style'}/>
            <Location/>
            <Getting/>

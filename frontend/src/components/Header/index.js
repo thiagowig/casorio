@@ -25,6 +25,7 @@ const Header = () => {
                             <div className="header-menu d-lg-block d-none">
                                 <ul className="mobail-menu d-flex">
                                     <li><AnchorLink href='#couple'>Casal</AnchorLink></li>
+                                    <li><AnchorLink href='#bridesmaids'>Daminhas</AnchorLink></li>
                                     <li><AnchorLink href='#people'>Madrinhas e Padrinhos</AnchorLink></li>
                                     <li><AnchorLink href='#event'>Cerimônia</AnchorLink></li>
                                     <li><AnchorLink href='#gift'>Presentes</AnchorLink></li>

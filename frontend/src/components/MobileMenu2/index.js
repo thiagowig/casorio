@@ -35,6 +35,7 @@ export default class MobileMenu2 extends Component {
                     </div>
                     <ul className="responsivemenu">
                         <li><Link to='/home' onClick={this.menuHandler}>Casal</Link></li>
+                        <li><Link to='/home' onClick={this.menuHandler}>Daminhas</Link></li>
                         <li><Link to='/home' onClick={this.menuHandler}>Madrinhas e Padrinhos</Link></li>
                         <li><Link to='/home' onClick={this.menuHandler}>Cerimônia</Link></li>
                         <li><Link to='/home' onClick={this.menuHandler}>Presentes</Link></li>

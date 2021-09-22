@@ -19,6 +19,7 @@ const Header2 = () => {
                             <div className="header-menu d-lg-block d-none">
                                 <ul className=" mobail-menu d-flex">
                                     <li><Link to='/home'>Casal</Link></li>
+                                    <li><Link to='/home'>Daminhas</Link></li>
                                     <li><Link to='/home'>Madrinhas e Padrinhos</Link></li>
                                     <li><Link to='/home'>Cerimônia</Link></li>
                                     <li><Link to='/home'>Presentes</Link></li>
